@@ -1,0 +1,21 @@
+
+
+
+
+<h3>Edit a Candy</h3>
+
+<%= form_for @candy do |f|%>
+    <div>
+    candy name: <%= f.text_field :name %>
+    </div>
+    <div>
+    calories: <%= f.number_field :calories%>
+    </div>
+    <div>
+    wrapper color:<%= f.text_field :wrapper_color%>
+    </div>
+    <div>
+    has nuts?<%= f.check_box :has_nuts %>
+    </div>
+    <%=f.submit%>
+    <%end%>

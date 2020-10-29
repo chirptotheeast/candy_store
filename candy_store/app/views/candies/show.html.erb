@@ -1,0 +1,16 @@
+    <h2><%=@candy.name %>🍬</h2>
+
+
+
+<div>
+    Calories: <%=@candy.calories %>
+</div>
+<div>   
+    Wrapper Color: <%= @candy.wrapper_color %>
+</div>
+<div>
+    Has Nuts? 🥜<%=@candy.has_nuts %>
+</div>
+
+<h3>Edit this Candy</h3>
+<div><%= button_to "edit", edit_candy_path(@candy.id), {method: "get"}%></div>

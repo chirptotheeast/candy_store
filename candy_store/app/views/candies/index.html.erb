@@ -2,6 +2,19 @@
 <h3>These are our Candies:</h3>
 
 
+  <div>
+        <%= form_tag candies_path, method: "GET" do %>
+            <%= radio_button_tag "sort_by", "name" %>
+            <%= label_tag "Sort by Name" %>
+            <%= radio_button_tag "sort_by", "calories" %>
+            <%= label_tag "Sort by Calorie Count" %>
+            <%= submit_tag "Sort" %>
+        <% end %>
+    
+ </div>
+
 <% @candies.each do |candy| %>
-    <div><%= candy.name %></div>
+    <div><%= link_to candy.name, candy_path(candy.id)%></div>
 <% end %>
+
+
