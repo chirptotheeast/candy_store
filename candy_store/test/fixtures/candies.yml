@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  calories: 1
+  wrapper_color: MyString
+  has_nuts: false
+
+two:
+  name: MyString
+  calories: 1
+  wrapper_color: MyString
+  has_nuts: false
